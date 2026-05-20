@@ -1,0 +1,524 @@
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f7fa; /* COLOR DE FONDO */
+    padding-top: 80px; /* SEPARACIÓN EN LA PARTE DE ARRIBA */
+    min-height: 100vh;
+}
+
+/*barra de navegacion*/
+header{
+    position: fixed; /*HACE QUE LA BARRA DE NAVEGACIÓN QUEDE FIJA*/
+    width: 100%; /* OCUPA EL 100% DE ANCHO DE LA PÁGINA*/
+    top: 0; /* SEPARACIÓN CON EL LIMITE DE LA PANTALLA ARRIBA */
+    background: rgba(10, 61, 98, 0.95); /* COLOR DE LA BARRA DE NAVEGACIÓN*/
+    backdrop-filter: blur(10px); /* DA EFECTO */
+}
+
+/* TEXTO DEL LOGO */
+nav{
+    display: flex; /* ACOMODA TODO HORIZONTALMENTE*/
+    justify-content: space-betWeen; /* ACOMODA UN OBJETO A LA IZQUIERDA Y EL OTRO A LA DERECHA*/
+    padding: 15px; /*EL RELLENO ALREDEDOR DEL OBJETO */
+    width: 90%; /* EL ANCHO QUE OCUPA */
+    margin: autO; /* MARGENES */
+    color: white; /* COLOR DE TEXTO */
+    font-size: 1.2rem; /* TAMAÑO DE TEXTO */
+}
+
+/* CONTACTO Y ACERCA DE: */
+nav ul{
+    list-style: none; /* QUITA LAS VIÑETAS DE LISTAS */
+    font-size: 1rem; /* TAMAÑO DE TEXTO */
+    margin-top: auto; /* MARGEN SUPERIOR */
+    margin-bottom: auto; /* MARGEN INFERIOR */
+}
+
+nav ul li{
+    display: inline; /* ACOMODA EN FILA */
+    margin-left: 20px; /* MARGEN IZQUIERDO */
+}
+
+nav a{
+    color: white; /* COLOR DE TEXTO */
+    text-decoration: none; /*QUITA LA LINEA DEL LINK */
+}
+
+/* IMAGEN PRINCIPAL */
+.hero{ 
+    height: 90vh; /* OCUPA EL 90% DE LA VISTA DE LA PANTALLA */
+    background-image: url('https://www.visitcentroamerica.com/wp-content/uploads/2025/04/Izabal-Guatemala-Centroamerica-02.webp');
+    background-size: cover; /* LA IMAGEN OCUPA TODO EL CONTENEDOR */
+    display: flex;
+    justify-content: center; /* CENTRA HORIZONTALMENTE */
+    align-items: center; /* CENTRA VERTICALMENTE */
+    color:rgb(255, 255, 255); /* COLOR DE TEXTO */
+    text-align: center; /* CENTRA EL TEXTO */
+    font-size: 2rem; /* TAMAÑO DEL TEXTO */
+}
+
+/* EXPLORA IZABAL */
+.contenedor{
+    color: #004d66; /* COLOR DE TEXTO */
+    font-size: 1.5rem; /*  TAMAÑO DE TEXTO */
+    padding: 30px 20px; /* RELLENO ALREDEDOR DEL OBJETO */
+    text-align: center; /* CENTRA EL TEXTO */
+    margin-top: 25px; /* MARGEN SUPERIOR */ 
+}
+
+/* CARTAS */
+.grid{
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+/*cartas de lugares*/
+
+.card{
+    margin-left: 15px;
+    margin-bottom: 50px;
+    margin-top: 25px;
+    display: block;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    text-decoration: none;
+    color: #333;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+/*propiedades de las imagenes de las cartas*/
+.card img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/*informacion en las cartas*/
+ .info{
+    padding: 20px 20px;
+    font-size: 18px;  
+}
+
+/*animacion de las cartas*/
+.card:hover{
+    transform: translateY(-10px)
+    scale(1.02);
+    box-shadow: 0 15px 25px
+    rgba(0,0,0,0.2);
+}
+
+
+/*FINAL*/
+
+ footer{
+    text-align: center;
+    padding: 20px;
+    background: #0a3d62;
+    color: white;
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+}
+/* IMAGENES PRINCIPALES */
+.hero-7Altares{ 
+    height: 90vh;
+    background-image: url('https://www.anywhere.com/img-a/attraction/siete-altares-waterfall-guatemala/Siete.Altares-1.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-Escobas{ 
+    height: 90vh;
+    background-image: url('imagenes/ESCOBAS.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-termales{ 
+    height: 90vh;
+    background-image: url('https://www.guateadventure.com/wp-content/uploads/2022/01/Micah-Leier-Cascada-El-Parai%CC%81so.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-Manabique{ 
+    height: 90vh;
+    background-image: url('imagenes/manabique.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-rio{ 
+    height: 90vh;
+    background-image: url('https://www.prensalibre.com/wp-content/uploads/2020/01/REG-050220-DS-DA%C3%91OS-PUENTE-R%C3%8DO-DULCE-1.jpg?quality=52');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-Playa{ 
+    width: auto;
+    height: 90vh;
+    background-image: url('https://img2.wallspic.com/crops/7/5/4/8/98457/98457-playa-tropicos-isla-vacaciones-viaje-2560x1440.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+.hero-Lago{ 
+    height: 90vh;
+    background-image: url('imagenes/IZABAL-LAGO.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.card-lugar{
+    background-color:white;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1); 
+}
+
+.card-lugar ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-lugar p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.card-lugar h3{
+    font-size: 1.7rem;
+    margin-bottom: 25px;
+}
+
+/*CONTACTO*/
+
+.contacto{
+    text-align: center;
+    margin-top: 5%;
+    
+}
+
+.redes-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.redes-item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 14px;
+    padding: 20px 26px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    text-decoration: none;
+    color: #1c1c1c;
+   
+}
+
+.redes-grid :hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(0,0,0,0.12);
+}
+
+.redes-item.instagram  .icon-wrap{ 
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+.redes-item.facebook .icon-wrap
+{ background: #1877f2;
+}
+
+.redes-item.whatsapp .icon-wrap{
+     background: #25d366; 
+    }
+
+
+.icon-wrap { 
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-wrap i {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.red-info h3{
+    font-size: 20px;
+    margin-bottom: 3px;
+}
+
+.red-info span {
+    font-size: 15px;
+    color: #555;
+}
+
+
+/*ACERCA DE*/
+.logo-Izabal{
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+
+.logo-Izabal img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+}
+
+.Titulo-de-pagina{
+    text-align: center;
+   margin-top: 40px;
+   padding: 0 20px;
+}
+
+.Pagina{
+    color: #00a8cc;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nombre-pagina{
+    font-size: 4rem;
+    font-weight: 800;
+    color: #042f4b;
+    margin-top: 10px;
+}
+
+.intro  {
+    max-width: 1100px;
+    margin: 70px auto;
+    padding: 0 20px;
+}
+
+.intro-texto{
+   font-size: 2rem;
+   text-align: center;
+   margin-bottom: 40px;
+   font-weight: 600;
+   color: #004d66;
+}
+
+.intro-body {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    line-height: 1.9;
+    font-size: 1.1rem   
+}
+
+.intro-body p{
+    margin-bottom: 25px;
+}
+
+.mision{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.Información{
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: #042f4b;
+}
+
+.mision-grid{
+    max-width: 1200px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.mision-carta{
+    background: white;
+    border-radius: 25px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.mision-carta:hover{
+    transform: translateY(-10px);
+}
+
+.mision-titulo{
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0083b0;
+}
+
+.mision-texto{
+    line-height: 1.8;
+    color: #444;
+}
+
+.Historia  {
+    max-width: 1100px;
+    margin: 100px auto;
+    padding: 0 20px;
+}
+
+.Seccion-historia{
+   color: #0099cc;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+   margin-bottom: 15px;
+}
+
+.Titulo-historia{
+   font-size: 3rem;
+   margin-bottom: 40px;
+   color: #042f4b;   
+}
+
+.Titulo-historia em{
+    color: #00a8cc;
+    font-style: normal;
+}
+
+.Texto-historia{
+    background: white;
+    border-radius: 30px;
+    padding: 50px;
+    line-height: 1.9;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+}
+
+.Texto-historia p{
+    margin-bottom: 25px;
+}
+
+.final{
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #0083b0, #00b4db);
+    color: white;
+    margin-top: 80px;
+}
+
+.texto-final{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.frase-final{
+    margin-bottom: 35px;
+    font-size: 1.1rem;
+}
+
+.btn-inicio{
+    display: inline-block;
+    background: white;
+    color: #0083b0;
+    text-decoration: none;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.btn-inicio:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/*GALERIA DE IMAGENES*/
+.galeria{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    padding: 20px 0;
+}
+
+.galeria img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 25px;
+    transition: 0.4s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.galeria img:hover{
+    transform: scale(1.04);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
